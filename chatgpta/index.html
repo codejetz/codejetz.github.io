@@ -6,10 +6,10 @@
 	<style>
 	
 		body {
-		    display: flex;
+		    /* display: flex; */
 		    font: 18px/20px sans-serif;
 		    align-items: center;
-		    column-gap: 100px;
+		   
 		    margin-top: 460px;
  		  	margin-bottom: 200px;
  		    background-color: #f0ffff;
@@ -36,7 +36,7 @@
 		
 		.topmyBox {
 			border: 10px;
-			overflow-wrap: break-word; 
+		/*	overflow-wrap: break-word; */
 			font: 18px/20px sans-serif;
 			width: auto;
 		}
@@ -44,7 +44,7 @@
 		.myBox {
 			border: 10px;
 			padding: 20px;
-			overflow-wrap: break-word; 
+		/*	overflow-wrap: break-word; */
 			font: 18px/20px sans-serif;
 			overflow: scroll;
 			width: auto;
@@ -62,17 +62,25 @@
  			 transform: translateY(-50%);
 		}
 		
-		.intro-text {
+	/*	.intro-text {
 			float: left;
-			width: 100%;
+			width: auto;
   			margin-right: 20%;
   			position: absolute;
    		
-   			top: 150px;
+   			
   			overflow-wrap: break-word;
   			font: 20px/22px sans-serif;
   			text-align: left;
+			}  */
+			
+			.intro-text {
+				top: 150px;
+				position: absolute;
+				 width: 100%;
+  
 			}
+			
 			
 			.highlight-blue:hover {
 		    color: blue;
@@ -115,18 +123,43 @@
 		@media (max-width: 600px) {
 			.column {
 				width: 100%;
+				font: 32px/34px sans-serif;
 			}
 		}
+		
+		@media (max-width: 600px) {
+				.topmyBox {
+			border: 10px;
+			overflow-wrap: break-word; 
+			font: 32px sans-serif;
+			width: auto;
+					}
+			}
 
-		@media screen and (max-width: 1023px) {
+@media (max-width: 600px) {
+		.myBox {
+			border: 10px;
+			padding: 20px;
+			overflow-wrap: break-word; 
+			font: 28px sans-serif;
+			overflow: scroll;
+			width: auto;
+			height: 300px;
+			}
+
+		}
+		
+	/*	@media screen and (max-width: 1023px) {
 			.centered-top-text {
 		width: 100%;
 			}
-		}
+		} */
 
-		@media screen and (max-width: 1023px) {
+		@media screen and (max-width: 600px) {
 			.intro-text {
-				width: 100%;
+				top: 150px;
+				 max-width: 2000px;
+				font: 28px sans-serif;
 			}
 		}
 		
@@ -139,11 +172,11 @@
 </div>
 
 <div class="intro-text">
-<p style="text-indent: 25px;">We've seen the range of responses from Chat-GPT3 on general questions, and we'll dabble with some topics to ask showing responses on this page. Any suggestions on what to ask or try with this service appreciated.</p> 
-<br><br><br><img src="../screens/WomanLaptop3.png" height="auto" width="auto" style="max-width: 100px; 
+<p style="text-indent: 25px;">We've seen the range of responses from Chat-GPT3 on general questions, and we'll dabble with some topics to ask which show the responses on this page. Any suggestions on what to ask or try with this service appreciated.</p> 
+<img src="../screens/WomanLaptop3.png" height="auto" width="auto" style=" 
         max-height: 100px; display:block; margin:auto;">
 </div>
-
+<br>
 	<div class="row">
 	
 <!--1st Column open div -->	
@@ -169,7 +202,7 @@ for book in books:
 	 <span class="highlight-blue-prompt ">Typed Prompt: </span><br>
     <span class="highlight-blue">What are some Black-owned travel blog sites?</span>
 	<br>
-	 ChatGPT Response :
+	 ChatGPT Response (Scrollable):
 <div class="myBox" style="border:2px solid #88ba1c;">
 Here are some Black-owned travel blog sites that you might be interested in:<br><br>
 
@@ -204,7 +237,7 @@ Note that this is not an exhaustive list, and there are many more black-owned tr
 	<div class ="topmyBox">
 	<span class="highlight-blue-prompt">Typed Prompt: </span><br>
 	<span class="highlight-blue">In the voice of Cornel West, what would he describe as the contributions of the hip hop group The Roots to world culture? </span><br><br>
-	 ChatGPT Response :
+	ChatGPT Response (Scrollable):
 	<div class="myBox" style="border:2px solid #88ba1c;">
 Well, my dear sister/brother, when we talk about the hip hop group The Roots and their contributions to world culture, we must first acknowledge the sheer brilliance and artistry of their music. The Roots are not just a band, they are a movement. Their unique sound blends jazz, soul, and hip hop in a way that is both intellectually stimulating and deeply soulful.<br><br>
 
@@ -224,7 +257,7 @@ All in all, The Roots are an inspiration and a true cultural force. They have no
 	<div class ="topmyBox">
 	<span class="highlight-blue-prompt">Typed Prompt: </span><br>
 	<span class="highlight-blue">Can you provide some notes for why Serena William is the GOAT? </span><br><br>
-	 ChatGPT Response :
+	ChatGPT Response (Scrollable):
 	<div class="myBox" style="border:2px solid #88ba1c;">
 Certainly! Here are some key points that support the argument that Serena Williams is the GOAT (Greatest of All Time) in women's tennis:<br><br>
 
@@ -249,7 +282,7 @@ Overall, these are some of the reasons why Serena Williams is considered by many
 	<div class ="topmyBox">
 	<span class="highlight-blue-prompt">Typed Prompt: </span><br>
 	<span class="highlight-blue">Can you make a spreadsheet of these fields : jazz musicians, songs and era of songs? </span><br><br>
-	 ChatGPT Response :
+	 ChatGPT Response (Scrollable):
 	<div class="myBox" style="border:2px solid #88ba1c;">
 Sure, here's an example spreadsheet with jazz musicians, songs, and the era of the songs:
         <table>
@@ -300,7 +333,7 @@ Sure, here's an example spreadsheet with jazz musicians, songs, and the era of t
 	<span class="highlight-blue-prompt">Typed Prompt: </span><br>
 	<span class="highlight-blue">Speak in the voice of Octavia E. Butler. Give 10 product travel service names which would be space travel for black travelers across the universe.</span>
 	<br>
-	 ChatGPT Response :
+	  ChatGPT Response (Scrollable):
 	<div class="myBox" style="border:2px solid #88ba1c;">
 	
 As a science fiction author, I am always excited to explore new and innovative ideas for space travel. In keeping with the theme of creating travel service names that would be suitable for black travelers across the universe, here are ten ideas that I came up with:<br><br>
@@ -325,7 +358,7 @@ These are just a few ideas that could be used to make space travel more accessib
 	<div class ="topmyBox">
 	<span class="highlight-blue-prompt">Typed Prompt: </span><br>
 	<span class="highlight-blue">How do I create javascript for the words "Mozambique Coastline" with protruding 3D effect using text shadows along with a slight diagonal slant? </span><br><br>
-	 ChatGPT Response :
+	 ChatGPT Response (Scrollable):
 	<div class="myBox" style="border:2px solid #88ba1c;">
 You can use CSS to create the 3D effect with text shadows and a diagonal slant. Here's an example of how you can achieve this effect:
 <pre>&lt;!DOCTYPE html>
@@ -354,7 +387,7 @@ You can use CSS to create the 3D effect with text shadows and a diagonal slant. 
 	<div class ="topmyBox">
 	<span class="highlight-blue-prompt">Typed Prompt: </span><br>
 	<span class="highlight-blue">Speak in the voice of Stacey Abrams. What are some social progress books by black women written in the past year you would recommend? </span><br><br>
-	 ChatGPT Response :
+	  ChatGPT Response (Scrollable):
 	<div class="myBox" style="border:2px solid #88ba1c;">
 Here are 10 social progress books written by Black women that were published in the past year that I highly recommend:<br><br>
 
@@ -376,7 +409,7 @@ These books offer powerful insights on race, feminism, activism, and more. I hop
 	<div class ="topmyBox">
 	<span class="highlight-blue-prompt">Typed Prompt: </span><br>
 	<span class="highlight-blue">Respond as Ben Okri. Give me science fiction titles where black Star Trek characters go on assignments with black Marvel characters.</span><br><br>
-	 ChatGPT Response :
+	  ChatGPT Response (Scrollable):
 	<div class="myBox" style="border:2px solid #88ba1c;">
 Here are science fiction titles that come to mind where black Star Trek characters go on assignments with black Marvel characters:<br><br>
 
@@ -425,7 +458,7 @@ Here are science fiction titles that come to mind where black Star Trek characte
 	&lt;h1 class="glowing-text">Wu-Tang: 36 Chambers&lt;/h1>
 &lt;/body>
 &lt;/html> </span><br><br>
-	 ChatGPT Response :
+	  ChatGPT Response (Scrollable):
 	<div class="myBox" style="border:2px solid #88ba1c;">
 
 There are a couple of issues with the provided HTML and CSS code. Here is the corrected code:<br><br>
@@ -471,7 +504,7 @@ There are a couple of issues with the provided HTML and CSS code. Here is the co
 	<div class ="topmyBox">
 	<span class="highlight-blue-prompt">Typed Prompt: </span><br>
     <span class="highlight-blue">What is a table of these albums: 1. Protocol – Skeng and Tommy Lee Sparta, Green , 2. Whap Whap – Skillibeng, Blue, 3. Born Fighter – Jahshii, Black 4. Elevate – Popcaan and Imeru Tafari, Green 5. Pull Up – Koffee, Orange </span><br><br>
-   ChatGPT Response :
+    ChatGPT Response (Scrollable):
     <div class="myBox" style="border:2px solid #88ba1c;">
         <table>
             <thead>
@@ -528,7 +561,7 @@ for (let i = 0; i < text.textContent.length; i++) {
 text.innerHTML = waveText;</code>
 </span>
     <br><br>
-    ChatGPT Response :
+     ChatGPT Response (Scrollable):
     <div class="myBox" style="border:2px solid #88ba1c;">
 This code creates a text animation effect for the phrase "Wu-Tang : Sound The Horns" by wrapping each letter in a &lt;span> tag and applying a CSS animation property to each span.
 
@@ -544,7 +577,7 @@ Finally, the code sets the innerHTML of the wave-text element to the waveText st
 	<div class ="topmyBox">
 	<span class="highlight-blue-prompt">Typed Prompt: </span><br>
 	<span class="highlight-blue">In the voice of Zora Neale Hurston, what would she describe as the contributions of the hip hop musician Nicki Minaj to world culture?  </span><br><br>
-	 ChatGPT Response :
+	  ChatGPT Response (Scrollable):
 	<div class="myBox" style="border:2px solid #88ba1c;">
 My dear friend, if you were to ask me about the contributions of the hip hop musician Nicki Minaj to world culture, I would say that she is a remarkable and unique voice that has contributed to the ongoing evolution of black music and culture.
 
@@ -564,7 +597,7 @@ In short, Nicki Minaj is a powerful force in the world of music and culture. She
 	<div class ="topmyBox">
 	<span class="highlight-blue-prompt">Typed Prompt: </span><br>
 	<span class="highlight-blue">How does AI give responses with order of steps?</span><br><br>
-	 ChatGPT Response :
+	  ChatGPT Response (Scrollable):
 	<div class="myBox" style="border:2px solid #88ba1c;">
 	AI can give responses in order of steps through a variety of methods depending on the specific task and the type of AI model used. One common approach is to use a sequence-to-sequence model, which is a type of neural network that is trained on pairs of input/output sequences. For example, in a math problem-solving scenario, the input sequence might be a math problem expressed in natural language, and the output sequence would be a sequence of steps to solve the problem.<br>
 <br>
@@ -595,7 +628,7 @@ Wu-Tang embrase toutes les équipes, calcinant tous les MC ici à Takamatsu.
 	<span class="highlight-blue-prompt">Typed Prompt: </span><br>
 	<span class="highlight-blue">Make a classification list of Martin Luther King's Jr's best speeches, based on topic. </span><br><br>
 	
-	 ChatGPT Response :
+	  ChatGPT Response (Scrollable):
 	<div class="myBox" style="border:2px solid #88ba1c;">
 Here is a classification list of Martin Luther King Jr's best speeches based on topic:<br><br>
 Civil Rights<br><br>
@@ -627,7 +660,7 @@ Education and Learning<br><br>
 	<span class="highlight-blue-prompt">Typed Prompt: </span><br>
 	<span class="highlight-blue">What are The Roots top 15 lyrical songs? </span><br><br>
 	
-	 ChatGPT Response :
+	 ChatGPT Response (Scrollable):
 	<div class="myBox" style="border:2px solid #88ba1c;">
 As an AI language model, I cannot have personal opinions or preferences as humans do. However, here are 15 popular songs by The Roots that are often cited as being notable for their lyrics and wordplay:<br><br>
 
@@ -672,7 +705,7 @@ worldcupChamps = [brazilCrew for brazilCrew in brazilTeams];
 	<span class="highlight-blue-prompt">Typed Prompt: </span><br>
 	<span class="highlight-blue">Speak in the voice of Nnedi Okorafor. Consider a hypothetical restaurant created by bell hooks. Write a restaurant review for the restaurant. </span><br><br>
 
-	 ChatGPT Response :
+	  ChatGPT Response (Scrollable):
 	<div class="myBox" style="border:2px solid #88ba1c;">
 Greetings, my fellow Earthlings. Today, I had the pleasure of visiting a unique establishment created by none other than the legendary bell hooks. The restaurant, located in the heart of the city, is a space of not only nourishment but also enlightenment.<br><br>
 
