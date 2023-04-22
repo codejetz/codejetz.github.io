@@ -62,34 +62,34 @@
 		}
 		
 			
-			.intro-text {
-				top: 175px;
-				position: static;
-				/* width: 100%;
-				overflow-wrap: anywhere; */
-  
-			}
-			
-			.highlight-blue {
-			font: 20px/22px helvetica;	
-			}
-			
-			.highlight-blue:hover {
-		    color: blue;
-			font: 20px/22px helvetica;	
-  			cursor: pointer;
-			}
+		.intro-text {
+			top: 175px;
+			position: static;
+			/* width: 100%;
+			overflow-wrap: anywhere; */
 
-			.highlight-blue-prompt {
-		   	 color: blue;
-			font: 18px/20px helvetica;
-			}
+		}
+			
+		.highlight-blue {
+		font: 20px/22px helvetica;	
+		}
+
+		.highlight-blue:hover {
+	   	color: blue;
+		font: 20px/22px helvetica;	
+		cursor: pointer;
+		}
+
+		.highlight-blue-prompt {
+		 color: blue;
+		font: 18px/20px helvetica;
+		}
 		
-			.set-green{
-			font-weight:bold; 
-			font: 18px/20px helvetica;
-			color: #4F7942;
-			}
+		.set-green{
+		font-weight:bold; 
+		font: 18px/20px helvetica;
+		color: #4F7942;
+		}
 
 		
 		/* bar styles */
@@ -110,9 +110,7 @@
 
 		.myBox::-webkit-scrollbar-thumb:hover {
 		background: #88ba1c;
-		
-
-}
+		}
 
 		/* Responsive layout - makes the columns stack on top of each other */
 		@media (max-width: 600px) {
@@ -131,7 +129,7 @@
 					}
 			}
 
-@media (max-width: 600px) {
+		@media (max-width: 600px) {
 		.myBox {
 			border: 10px;
 			padding: 20px;
@@ -162,7 +160,7 @@
 <script>
 	
 var aiintrobard = "We've seen a range of responses from Bard on general questions, and here's a list of others with more topics. To try Google Bard for questions, coding or AI prompts, can go for free to  to : <a href='https://bard.google.com'  target='_blank'>Google Bard</a>"
-var aiprompt1bard = "";	
+var aiprompt1bard = "import requests <br> from bs4 import BeautifulSoup <br> # Get the HTML of Ta-Nehisi Coates's Wikipedia page<br> url = 'https://en.wikipedia.org/wiki/Ta-Nehisi_Coates' <br>response = requests.get(url) <br> soup = BeautifulSoup(response.content, 'html.parser') <br> <br> # Find the table of Ta-Nehisi Coates's books <br> table = soup.find('table', class_='wikitable') <br> <br> # Get the titles of Ta-Nehisi Coates's books <br> titles = [row.find('a').text for row in table.find_all('tr')] <br> <br> # Sort the titles in alphabetical order <br> titles.sort() <br> <br>  # Print the titles <br> for title in titles: <br> print(title) <br> ";	
 var aiprompt2bard = "";		
 var aiprompt3bard = "";	
 var aiprompt4bard = "";		
