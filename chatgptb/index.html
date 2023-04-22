@@ -160,10 +160,14 @@
 <body>
 
 <script>
+	
+var aiintrobard = "We've seen a range of responses from Bard on general questions, and here's a list of others with more topics.
+To try Chat-GPT3 for questions, coding or AI prompts, can go for free to : <a href="https://chat.openai.com/"  target=”_blank>Bard</a> "
+	
 function changeAi(event)
 {
-    var aiSelected = event.value;
-  /*  document.getElementsByTagName('BODY')[0].style.backgroundColor=color;*/
+   	var aiSelected = event.value;
+	document.getElementsById('ai-intro').innerHTML=aiintrobard;
 }
 </script>
 	
@@ -175,7 +179,7 @@ function changeAi(event)
 <div class="intro-text">
 <p  class="overflow-wrap overflow-wrap--anywhere"
 id="ai-intro">We've seen a range of responses from Chat-GPT3 on general questions, and here's a list of others with more topics.
-To try Chat-GPT3 for questions, coding or AI prompts, can go for free to : <a href="https://chat.openai.com/"  target=”_blank>ChatGPT</a> </p>
+To try Chat-GPT3 for questions, coding or AI prompts, can go for free to : <a href="https://chat.openai.com/"  target="_blank">ChatGPT</a> </p>
 
 <select name="aioptions" onchange="changeAi(this)">
 <option value="chatgpt">ChatGPT</option>
