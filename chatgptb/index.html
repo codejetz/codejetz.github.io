@@ -43,9 +43,7 @@
 		}
 		.myBox {
 			border: 10px;
-			padding: 20px;
-		/*	overflow-wrap: break-word; */
-         
+			padding: 20px;         
 			font: 18px/20px helvetica;
 			overflow: scroll;
 			width: auto;
@@ -55,7 +53,7 @@
 		
 		.centered-top-text {
  			 width: 100%;
- 		     margin-right: 20%;
+ 	   		 margin-right: 20%;
 			 font: 18px/20px helvetica;
  			 text-align: center;
  			 top: 100px;
@@ -63,17 +61,6 @@
  			 transform: translateY(-50%);
 		}
 		
-	/*	.intro-text {
-			float: left;
-			width: auto;
-  			margin-right: 20%;
-  			position: absolute;
-   		
-   			
-  			overflow-wrap: break-word;
-  			font: 14px/16px helvetica;
-  			text-align: left;
-			}  */
 			
 			.intro-text {
 				top: 175px;
@@ -166,22 +153,38 @@
 		}
 		
 	</style>
+	
+
+	
 </head>
 <body>
 
+<script>
+function changeAi(event)
+{
+    var aiSelected = event.value;
+    document.getElementsByTagName('BODY')[0].style.backgroundColor=color;
+}
+</script>
+	
+	
 <div class="centered-top-text">
 <h3>ChatGPT-3 Prompts and Samples</h3>
 </div>
 
 <div class="intro-text">
 <p  class="overflow-wrap overflow-wrap--anywhere"
->We've seen a range of responses from Chat-GPT3 on general questions, and here's a list of others with more topics.
+id="ai-intro">We've seen a range of responses from Chat-GPT3 on general questions, and here's a list of others with more topics.
 To try Chat-GPT3 for questions, coding or AI prompts, can go for free to : <a href="https://chat.openai.com/"  target=”_blank>ChatGPT</a> </p>
-<img src="../screens/WomanLaptop3.png" height="auto" width="auto" style=" 
-        max-height: 100px; display:block; margin:auto;">
-</div>
+
+<select name=“aioptions” onchange="changeAi(this)">
+<option value=“chatgpt”>ChatGPT</option>
+<option value="bard”>Google Bard</option>
+</select>
+	
+<img src="../screens/WomanLaptop3.png" height="auto" width="auto" style="max-height: 100px; display:block; margin:auto;"></div>
 <br><br><br><br>
-	<div class="row">
+<div class="row">
 	
 <!--1st Column open div -->	
 		<div class="column">
