@@ -179,7 +179,7 @@ function changeAi(event)
 			promptnum = promptindx.toString();
 			promptnum = "aiprompt" + promptnum;
 			console.log(promptnum);
-			document.getElementById("aiprompt" + (currentc + 1)) = aipromptsbard[currentc];
+			document.getElementById(promptnum) = aipromptsbard[currentc];
 		}
 	} else if (aiSelected == "chatgpt") {
 		document.getElementById('ai-intro').innerHTML=aiintrochatgpt;
@@ -188,7 +188,7 @@ function changeAi(event)
 			promptnum = promptindx.toString();
 			promptnum = "aiprompt" + promptnum;
 			console.log(promptnum);
-			document.getElementById("aiprompt" + (currentc + 1)) = aipromptschatgpt[currentc];
+			document.getElementById(promptnum) = aipromptschatgpt[currentc];
 			}
 		}
 	}
