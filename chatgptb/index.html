@@ -171,10 +171,12 @@ var aipromptschatgpt = ["import requests <br> from bs4 import BeautifulSoup <br>
 function changeAi(event)
 {
    	var aiSelected = event.value;
+	var str currentid = "";
 	if (aiSelected == "bard") {
 		document.getElementById('ai-intro').innerHTML=aiintrobard;
 		for(currentc = 0; currentc < 3; currentc++) {
 			currentid = "aiprompt" + (currentc + 1);
+			console.log(currentid);
 			document.getElementById(currentid) = aipromptsbard[currentc];
 		}
 	} else if (aiSelected == "chatgpt") {
