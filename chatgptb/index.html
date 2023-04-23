@@ -160,35 +160,28 @@
 <script>
 	
 var aiintrobard = "We've seen a range of responses from Bard on general questions, and here's a list of others with more topics. To try Google Bard for questions, coding or AI prompts, can go for free to  to : <a href='https://bard.google.com'  target='_blank'>Google Bard</a>"
-var aiprompt1bard = "import requests <br> from bs4 import BeautifulSoup <br> # Get the HTML of Ta-Nehisi Coates's Wikipedia page<br> url = 'https://en.wikipedia.org/wiki/Ta-Nehisi_Coates' <br>response = requests.get(url) <br> soup = BeautifulSoup(response.content, 'html.parser') <br> <br> # Find the table of Ta-Nehisi Coates's books <br> table = soup.find('table', class_='wikitable') <br> <br> # Get the titles of Ta-Nehisi Coates's books <br> titles = [row.find('a').text for row in table.find_all('tr')] <br> <br> # Sort the titles in alphabetical order <br> titles.sort() <br> <br>  # Print the titles <br> for title in titles: <br> print(title) <br> ";	
-var aiprompt2bard = "";		
-var aiprompt3bard = "";	
-var aiprompt4bard = "";		
-var aiprompt5bard = "";		
-var aiprompt6bard = "";		
-var aiprompt7bard = "";		
-var aiprompt8bard = "";		
-var aiprompt9bard = "";	
+var aipromptsbard = ["import requests <br> from bs4 import BeautifulSoup <br> # Get the HTML of Ta-Nehisi Coates's Wikipedia page<br><br> url = 'https://en.wikipedia.org/wiki/Ta-Nehisi_Coates' <br>response = requests.get(url) <br> soup = BeautifulSoup(response.content, 'html.parser') <br> <br> # Find the table of Ta-Nehisi Coates's books <br> table = soup.find('table', class_='wikitable') <br> <br> # Get the titles of Ta-Nehisi Coates's books <br> titles = [row.find('a').text for row in table.find_all('tr')] <br> <br> # Sort the titles in alphabetical order <br> titles.sort() <br> <br>  # Print the titles <br> for title in titles: <br> print(title) <br> ",	
+"To do this, we can create a list of Ta-Nehisi Coates books and then sort them in alphabetical order using the sorted() function in Python. Here is an example: <br><br>books = ['The Water Dancer', 'Between the World and Me', 'We Were Eight Years in Power', 'The Beautiful Struggle', 'The Black Panther: A Nation Under Our Feet']<br><br>books.sort() <br>for book in books: <br>print(book) <br>", 
+		     "" , "", "", "", "", "", "", ""]
 	
 var aiintrochatgpt = "We've seen a range of responses from Chat-GPT3 on general questions, and here's a list of others with more topics. To try Chat-GPT3 for questions, coding or AI prompts, can go for free to : <a href='https://chat.openai.com/'  target='_blank'>ChatGPT</a> "
-var aiprompt1chatgpt = "";	
-var aiprompt2chatgpt = "";		
-var aiprompt3chatgpt = "";	
-var aiprompt4chatgpt = "";		
-var aiprompt5chatgpt = "";		
-var aiprompt6chatgpt = "";		
-var aiprompt7chatgpt = "";		
-var aiprompt8chatgpt = "";		
-var aiprompt9chatgpt = "";	
+var aipromptschatgpt = ["import requests <br> from bs4 import BeautifulSoup <br> # Get the HTML of Ta-Nehisi Coates's Wikipedia page<br> url = 'https://en.wikipedia.org/wiki/Ta-Nehisi_Coates' <br>response = requests.get(url) <br> soup = BeautifulSoup(response.content, 'html.parser') <br> <br> # Find the table of Ta-Nehisi Coates's books <br> table = soup.find('table', class_='wikitable') <br> <br> # Get the titles of Ta-Nehisi Coates's books <br> titles = [row.find('a').text for row in table.find_all('tr')] <br> <br> # Sort the titles in alphabetical order <br> titles.sort() <br> <br>  # Print the titles <br> for title in titles: <br> print(title) <br> ",	
+"", "" , "", "", "", "", "", "", ""]	
 	
 function changeAi(event)
 {
    	var aiSelected = event.value;
 	if (aiSelected == "bard") {
 		document.getElementById('ai-intro').innerHTML=aiintrobard;
-		document.getElementById('aiprompt1').innerHTML=aiprompt1bard;
+		for(currentc = 0; currentc < 3; currentc++) {
+			currentid = "aiprompt" + (currentc + 1);
+			document.getElementbyId(currentId) = aipromptsbard[currentc];
+		}
 	} else if (aiSelected == "chatgpt") {
 		document.getElementById('ai-intro').innerHTML=aiintrochatgpt;
+		for(currentc = 0; currentc < 3; currentc++) {
+			currentid = "aiprompt" + (currentc + 1);
+			document.getElementbyId(currentId) = aipromptschatgpt[currentc];
 	}
 }
 </script>
