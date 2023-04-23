@@ -175,13 +175,13 @@ function changeAi(event)
 		document.getElementById('ai-intro').innerHTML=aiintrobard;
 		for(currentc = 0; currentc < 3; currentc++) {
 			currentid = "aiprompt" + (currentc + 1);
-			document.getElementbyId(currentid) = aipromptsbard[currentc];
+			document.getElementById(currentid) = aipromptsbard[currentc];
 		}
 	} else if (aiSelected == "chatgpt") {
 		document.getElementById('ai-intro').innerHTML=aiintrochatgpt;
 		for(currentc = 0; currentc < 3; currentc++) {
 			currentid = "aiprompt" + (currentc + 1);
-			document.getElementbyId(currentid) = aipromptschatgpt[currentc];
+			document.getElementById(currentid) = aipromptschatgpt[currentc];
 			}
 		}
 	}
