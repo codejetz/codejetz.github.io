@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>ChatGPT-3 Prompts and Samples</title>
+	<title>ChatGPT, Bard Prompts and Samples</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<style>
 	
 		body {
 		    /* display: flex; */
 		    font: 18px/20px helvetica;
-		    align-items: center;
-		   
+		    align-items: center;   
 		    margin-top: 200px;
  		    margin-bottom: 200px;
  		    background-color: #E6F1FA;
@@ -19,7 +18,7 @@
 		}
 		
 		optgroup { 
-			font-size:22px; 
+			font-size:20px; 
 		}
 		
 		/* Style the columns */
@@ -49,6 +48,11 @@
 		
 		.responseType {
 			font: 22px/24px helvetica; 
+			width: auto;
+		}
+		
+		.chatdropdown {
+			font: 20px/22px helvetica; 
 			width: auto;
 		}
 		
@@ -123,11 +127,6 @@
 		background: #88ba1c;
 		}
 		
-		select.form-control {
-		  font-size: 1.1em;
-		  height: 1.2em;
-		  -webkit-appearance: none;
-		}
 
 		/* Responsive layout - makes the columns stack on top of each other */
 		@media (max-width: 600px) {
@@ -157,12 +156,6 @@
 			height: 300px;
 			}
 
-		}
-		
-		@media (max-width: 600px) {
-  			  select.form-control {
-   			  font-size: 20px;
-  				  }
 		}
 		
 		@media screen and (max-width: 600px) {
@@ -204,7 +197,7 @@ var aipromptsbard = ["import requests <br> from bs4 import BeautifulSoup <br><br
 "Sure, here is a restaurant review for a hypothetical restaurant created by bell hooks, in the voice of Nnedi Okorafor:<br><br>'I recently had the pleasure of dining at a new restaurant in town called 'The Third Space.' The restaurant is owned and operated by the renowned author bell hooks, and it is a celebration of black culture and food.<br><br>The restaurant is located in a historic building in the heart of the city, and it has a warm and inviting atmosphere. The walls are decorated with artwork by black artists, and the menu features dishes from all over the African diaspora.<br><br>I started my meal with the efo riro, a Nigerian stew made with spinach, okra, and palm oil. The stew was rich and flavorful, and the spinach was cooked perfectly. For my main course, I had the jerk chicken, which was served with rice and peas. The chicken was cooked perfectly, and the jerk sauce was flavorful and spicy.<br><br>I finished my meal with the black sesame cake, which was moist and delicious. The cake was served with a scoop of vanilla ice cream, and it was the perfect way to end my meal.<br><br>Overall, I had a wonderful experience at The Third Space. The food was delicious, the service was excellent, and the atmosphere was warm and inviting. I would highly recommend this restaurant to anyone looking for a delicious and culturally-rich dining experience.' ",
 "The airport code for Zambia is LUN. It is the IATA code for Kenneth Kaunda International Airport, the largest and busiest airport in Zambia. The airport is located in Lusaka, the capital of Zambia."]
 	
-var aiintrochatgpt = "We've seen a range of responses from Chat-GPT3 on general questions, and here's a list of others with more topics. To try Chat-GPT3 for questions, coding or AI prompts, can go for free to : <a href='https://chat.openai.com/'  target='_blank'>ChatGPT</a> "
+var aiintrochatgpt = "We've seen a range of responses from ChatGPT-3 to 4 on general questions, and here's a list of others with more topics. To try Chat-GPT3 for questions, coding or AI prompts, can go for free to : <a href='https://chat.openai.com/'  target='_blank'>ChatGPT</a> "
 var aipromptschatgpt = ["To do this, we can create a list of Ta-Nehisi Coates books and then sort them in alphabetical order using the sorted() function in Python. Here is an example: <br><br>books = ['The Water Dancer', 'Between the World and Me', 'We Were Eight Years in Power', 'The Beautiful Struggle', 'The Black Panther: A Nation Under Our Feet']<br><br>books.sort() <br>for book in books: <br>print(book) <br>", 	
 "Here are some Black-owned travel blog sites that you might be interested in:<br><br>Travel Noire (https://travelnoire.com/)<br><br>The Blog Abroad (https://theblogabroad.com/)<br><br>Oneika the Traveller (https://www.oneikathetraveller.com/)<br><br>The Catch Me If You Can (https://www.thecatchmeifyoucan.com/)<br><br>Hey! Dip Your Toes In (https://www.heydipyourtoesin.com/)<br><br>The Sophisticated Life (https://thesophisticatedlife.com/)<br><br>Black Girls Travel Too (https://www.blackgirlstraveltoo.com/)<br><br>The Thought Card (https://thoughtcard.com/)<br><br>The Barefoot Nomad (https://www.thebarefootnomad.com/)<br><br>The Queen's Chronicles (https://queenschronicles.com/)<br><br>Note that this is not an exhaustive list, and there are many more black-owned travel blog sites out there.", 
 "Well, my dear sister/brother, when we talk about the hip hop group The Roots and their contributions to world culture, we must first acknowledge the sheer brilliance and artistry of their music. The Roots are not just a band, they are a movement. Their unique sound blends jazz, soul, and hip hop in a way that is both intellectually stimulating and deeply soulful.<br><br>But it's not just their music that sets them apart. The Roots have always been unapologetically political, using their platform to speak truth to power and to shed light on the struggles of marginalized communities. Their lyrics are filled with social commentary and pointed critiques of the status quo. They are a voice for the voiceless, a megaphone for the oppressed.<br><br>Beyond their musical and political contributions, The Roots have also been instrumental in elevating the role of live instrumentation in hip hop. They have paved the way for other bands to blend live instrumentation with electronic beats, creating a sound that is both organic and futuristic.<br><br>And let us not forget their contributions to late-night television with their role as the house band for The Tonight Show Starring Jimmy Fallon. The Roots have used this platform to showcase up-and-coming artists, highlight social issues, and bring their unique blend of musical genius to a wider audience.<br><br>All in all, The Roots are an inspiration and a true cultural force. They have not only enriched the world of music but have also used their platform to push for social change and to uplift communities that have been historically marginalized. We owe them a debt of gratitude for their contributions to world culture.<br><br>", 
@@ -268,22 +261,22 @@ function changeAi(event)
 
 <div class="intro-text">
 <p  class="overflow-wrap overflow-wrap--anywhere"
-id="ai-intro">We've seen a range of responses from Chat-GPT3 on general questions, and here's a list of others with more topics.
+id="ai-intro">We've seen a range of responses from ChatGPT-3 to 4 on general questions, and here's a list of others with more topics.
 To try Chat-GPT3 for questions, coding or AI prompts, can go for free to : <a href="https://chat.openai.com/"  target="_blank">ChatGPT</a> </p>
 
 <center>
 <h3>	
-Other AI Chat services...<br>	
-<select name="aioptions" style="font-size:22px;" onchange="changeAi(this)">
+<span class="chatdropdown">View other AI Chat service responses...</span><br>	
+<select name="aioptions" style="font-size:20px;" onchange="changeAi(this)">
 <optgroup>	
+<option value="bard">Google Bard</option>	
 <option value="chatgpt">ChatGPT</option>
-<option value="bard">Google Bard</option>
 </optgroup>
 </select></h3>
 </center><br><br>
 	
 <img src="../screens/WomanLaptop3.png" height="auto" width="auto" style="max-height: 100px; display:block; margin:auto;"></div>
-<br><br><br><br>
+<br><br>
 <div class="row">
 	
 <!--1st Column open div -->	
