@@ -225,7 +225,11 @@ function changeAi(event)
 			promptnum = "aiprompt" + promptnum;
 			console.log(promptnum);
 			document.getElementById(promptnum).innerHTML = aipromptsbard[currentc];
-			document.getElementsByClassName("responseType").innerHTML = "Bard Response (Scrollable)";
+			boxheaders = document.getElementsByClassName("responseType");  
+    				for(var i = 0; i < boxheaders.length; i++){
+   					 boxheaders[i].innerText="Bard Response (Scrollable)";  
+  				  }
+			// document.getElementsByClassName("responseType").innerHTML = "Bard Response (Scrollable)";
 		}
 	} else if (aiSelected == "chatgpt") {
 		document.getElementById('ai-intro').innerHTML=aiintrochatgpt;
@@ -235,7 +239,10 @@ function changeAi(event)
 			promptnum = "aiprompt" + promptnum;
 			console.log(promptnum);
 			document.getElementById(promptnum).innerHTML = aipromptschatgpt[currentc];
-			document.getElementByClassName("responseType").innerHTML = "ChatGPT Response (Scrollable)";
+			boxheaders = document.getElementsByClassName("responseType");  
+    				for(var i = 0; i < boxheaders.length; i++){
+   					 boxheaders[i].innerText="Bard Response (Scrollable)";  
+  				  }
 			}
 		}
 	}
