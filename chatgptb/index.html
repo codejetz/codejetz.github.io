@@ -225,7 +225,7 @@ function changeAi(event)
 			promptnum = "aiprompt" + promptnum;
 			console.log(promptnum);
 			document.getElementById(promptnum).innerHTML = aipromptsbard[currentc];
-			document.getElementById("responseType").innerHTML = "Bard Response (Scrollable)";
+			document.getElementsByClassName("responseType").innerHTML = "Bard Response (Scrollable)";
 		}
 	} else if (aiSelected == "chatgpt") {
 		document.getElementById('ai-intro').innerHTML=aiintrochatgpt;
@@ -235,7 +235,7 @@ function changeAi(event)
 			promptnum = "aiprompt" + promptnum;
 			console.log(promptnum);
 			document.getElementById(promptnum).innerHTML = aipromptschatgpt[currentc];
-			document.getElementById("responseType").innerHTML = "ChatGPT Response (Scrollable)";
+			document.getElementByClassName("responseType").innerHTML = "ChatGPT Response (Scrollable)";
 			}
 		}
 	}
